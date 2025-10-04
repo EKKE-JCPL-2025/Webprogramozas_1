@@ -1,0 +1,125 @@
+:root {
+  --bg: #202839;
+  --text: #e0e0e0;
+  --menu: #4caf50;
+  --menu-bg: #1c1c1d;
+  --button-bg: #4caf50;
+  --button-text: #ffffff;
+  --table-border: #3f4152;
+  --table-row-primary-bg: #2c2f3a;
+  --table-row-secondary-bg: #46464d;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+nav {
+  margin-bottom: 20px;
+  background-color: var(--menu-bg);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+nav a {
+  color: var(--menu);
+  border-radius: 10px;
+  text-decoration: none;
+  margin-right: 15px;
+  padding: 8px 12px;
+  font-weight: 800;
+}
+
+nav a:hover {
+  background-color: var(--menu);
+  color: var(--menu-bg);
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+form {
+  margin: 20px 0;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+form label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+table tr {
+  border: 1px solid var(--table-border);
+  background-color: var(--table-row-primary-bg);
+  margin: 10px;
+}
+
+td, th {
+  padding: 12px;
+  text-align: left;
+}
+
+th, tr:nth-child(even) {
+  background-color: var(--table-row-secondary-bg);
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.card {
+  background-color: var(--table-row-primary-bg);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card a {
+  display: inline-block;
+  margin: 10px 0;
+  color: var(--button-text);
+  background-color: var(--button-bg);
+  text-decoration: none;
+  font-weight: 800;
+  border-radius: 10px;
+  padding: 8px 12px;
+
+}

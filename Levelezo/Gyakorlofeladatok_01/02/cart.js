@@ -27,6 +27,7 @@ function renderCart() {
     const sumEl = document.getElementById('sum');
     if (!ul)
         return; ul.innerHTML = '';
+    
     for (let i = 0; i < cart.length; i++) {
         const li = document.createElement('li');
         li.innerHTML = cart[i].name + ' – ' + cart[i].price + ' Ft ' + `<button data-i="${i}" class="remove">×</button>`;
